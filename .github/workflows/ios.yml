@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: iOS build setup
-        run: xcodebuild build-for-testing -scheme ForceDividedByMasss  -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2'
+        run: xcodebuild build-for-testing -scheme TestMe  -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2'
 
       - name: testing ... iPhone 11
-        run: xcodebuild test-without-building -scheme ForceDividedByMasss -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2'
+        run: xcodebuild test-without-building -scheme TestMe -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2'
