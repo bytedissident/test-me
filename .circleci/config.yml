@@ -3,7 +3,6 @@ jobs:
     macos:
       xcode: 12.5.1
     steps:
-      ...
       - run:
           name: Run tests
           command: fastlane tests
