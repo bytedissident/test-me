@@ -7,10 +7,25 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
+
+class ViewModel: ObservableObject {
+    @Published var me = "yo"
+    
+    func tell(str: String) {
+        me = str
+    }
+}
+
+public struct ContentView: View {
+    @ObservedObject var viewModel = ViewModel()
+    public var body: some View {
+        Text(viewModel.me)
             .padding()
+        Button(action: {
+            self.viewModel.tell(str: "hello")
+        }) {
+            Label("Add Folder", systemImage: "folder.badge.plus")
+        }
     }
 }
 
@@ -19,3 +34,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

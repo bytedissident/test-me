@@ -1,14 +1,15 @@
 //
-//  TestMeTests.swift
-//  TestMeTests
+//  TestMeSnapShotTests.swift
+//  TestMeSnapShotTests
 //
-//  Created by Derek Bronston on 2/8/22.
+//  Created by Derek Bronston on 2/15/22.
 //
 
 import XCTest
+//import SnapshotTesting
 @testable import TestMe
 
-class ContentViewTests: XCTestCase {
+class TestMeSnapShotTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,11 +19,8 @@ class ContentViewTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testFailedExample() {
-        XCTAssert(true)
-    }
-
-    func testPassedExample() {
-        XCTAssert(true)
-    }
+//    func testView() {
+//        let sut = ContentView()
+//        assertSnapshot(matching: sut, as: .image, record: false)
+//    }
 }
