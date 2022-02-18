@@ -1,12 +1,12 @@
 version: 2
 jobs:
-  build-and-test:
+  build:
     macos:
-      xcode: "10.2.0"
+      xcode: "12.5.1"
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
+      FASTLANE_LANE: tests
     shell: /bin/bash --login -o pipefail
     steps:
       - checkout
