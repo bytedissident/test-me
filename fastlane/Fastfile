@@ -6,6 +6,10 @@ project = "TestMe"
 
 platform :ios do
 
+  before_all do
+    setup_circle_ci
+  end
+
   desc "Test"
   lane :tests do
     run_tests(
