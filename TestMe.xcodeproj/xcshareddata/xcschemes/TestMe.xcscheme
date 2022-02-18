@@ -63,30 +63,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87FF1D5027BC183A00A3235F"
-               BuildableName = "TestMeSnapShotTests.xctest"
-               BlueprintName = "TestMeSnapShotTests"
-               ReferencedContainer = "container:TestMe.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "87FF1D5D27BC184F00A3235F"
                BuildableName = "TestMeE2ETests.xctest"
                BlueprintName = "TestMeE2ETests"
                ReferencedContainer = "container:TestMe.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UISystemTests"
-               BuildableName = "UISystemTests"
-               BlueprintName = "UISystemTests"
-               ReferencedContainer = "container:modules/UISystem">
             </BuildableReference>
          </TestableReference>
       </Testables>

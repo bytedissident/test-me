@@ -13,7 +13,6 @@
 		87775B0527B2ACAA007BC20A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87775B0427B2ACAA007BC20A /* Preview Assets.xcassets */; };
 		87775B0F27B2ACAA007BC20A /* TestMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87775B0E27B2ACAA007BC20A /* TestMeTests.swift */; };
 		87775B6527B40769007BC20A /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87775B6427B40769007BC20A /* TestClass.swift */; };
-		87A70E9927BC56AB00958A5E /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 87A70E9827BC56AB00958A5E /* UISystem */; };
 		87A70E9C27BC572E00958A5E /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 87A70E9B27BC572E00958A5E /* ViewInspector */; };
 		87FF1D5427BC183A00A3235F /* TestMeSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF1D5327BC183A00A3235F /* TestMeSnapShotTests.swift */; };
 		87FF1D6127BC184F00A3235F /* TestMeE2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF1D6027BC184F00A3235F /* TestMeE2ETests.swift */; };
@@ -52,7 +51,6 @@
 		87775B0A27B2ACAA007BC20A /* TestMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87775B0E27B2ACAA007BC20A /* TestMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMeTests.swift; sourceTree = "<group>"; };
 		87775B6427B40769007BC20A /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
-		87A70E9527BC556300958A5E /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = modules/UISystem; sourceTree = "<group>"; };
 		87FF1D5127BC183A00A3235F /* TestMeSnapShotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMeSnapShotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FF1D5327BC183A00A3235F /* TestMeSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMeSnapShotTests.swift; sourceTree = "<group>"; };
 		87FF1D5E27BC184F00A3235F /* TestMeE2ETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMeE2ETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A70E9927BC56AB00958A5E /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +168,6 @@
 		87FF1D7727BC229200A3235F /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				87A70E9527BC556300958A5E /* UISystem */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -193,7 +189,6 @@
 			);
 			name = TestMe;
 			packageProductDependencies = (
-				87A70E9827BC56AB00958A5E /* UISystem */,
 			);
 			productName = TestMe;
 			productReference = 87775AFA27B2AC9D007BC20A /* TestMe.app */;
@@ -754,10 +749,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87A70E9827BC56AB00958A5E /* UISystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UISystem;
-		};
 		87A70E9B27BC572E00958A5E /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87A70E9A27BC572E00958A5E /* XCRemoteSwiftPackageReference "ViewInspector" */;
