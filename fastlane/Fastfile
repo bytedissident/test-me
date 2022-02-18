@@ -12,7 +12,8 @@ platform :ios do
       scheme: project,
       code_coverage: true,
       output_directory: 'output',
-      result_bundle: true
+      result_bundle: true,
+      xcargs: "-allowProvisioningUpdates"
       )
   end
 
