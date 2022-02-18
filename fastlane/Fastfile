@@ -1,0 +1,31 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+project = "TestMe"
+
+platform :ios do
+
+  desc "Test"
+  lane :tests do
+    run_tests(
+      scheme: project,
+      code_coverage: true,
+      output_directory: 'output',
+      result_bundle: true
+      )
+  end
+
+  desc "Test Coverage"
+  lane :coverage do
+    slather(
+        scheme: project,
+        proj: project + ".xcodeproj",
+        source_directory: 'output',
+        output_directory: 'output',
+        simple_output:true,
+        json: true,
+        ignore: '../../../Library/Developer/Xcode/DerivedData/*'
+      )
+    end
+end
